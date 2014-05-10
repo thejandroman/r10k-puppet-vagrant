@@ -1,0 +1,2 @@
+base-puppet-vagrant
+===================
