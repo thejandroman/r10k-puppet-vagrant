@@ -8,7 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #config.vm.box = 'centos-6.5-x64-puppet'
   #config.vm.box_url = 'http://puppet-vagrant-boxes.puppetlabs.com/centos-65-x64-virtualbox-puppet.box'
 
-  # Ubuntu 13.10
+  # Ubuntu 12.04
   config.vm.box = 'ubuntu-12.04.2-x64-puppet'
   config.vm.box_url = 'http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210.box'
 
