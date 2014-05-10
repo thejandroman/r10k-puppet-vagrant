@@ -1,4 +1,4 @@
-base-puppet-vagrant
+r10k-puppet-vagrant
 ===================
 
 A simple vagrant config which:
