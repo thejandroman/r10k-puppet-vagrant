@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = 'http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210.box'
 
   #config.vm.network 'public_network', ip: '192.168.1.XXX'
-  config.vm.hostname = 'kibana3.thejandroman.local'
+  config.vm.hostname = 'thejandroman.local'
 
   # Configure RAM and CPU(s)
   config.vm.provider :virtualbox do |vb|
