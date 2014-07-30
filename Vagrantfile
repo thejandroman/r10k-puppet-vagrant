@@ -15,17 +15,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #config.vm.network 'public_network', ip: '192.168.1.XXX'
   config.vm.hostname = 'thejandroman.local'
 
+  config.ssh.forward_agent
+
   # Configure RAM and CPU(s)
   config.vm.provider :virtualbox do |vb|
-    vb.customize ['modifyvm', :id, '--memory', '512']
+    vb.customize ['modifyvm', :id, '--memory', '2048']
     vb.customize ['modifyvm', :id, '--cpus', 1]
     vb.customize ['setextradata', :id, 'VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root', '1']
-  end
-
-  config.vm.provision :shell, :path => 'default.sh'
-
-  config.vm.provision :puppet do |puppet|
-    puppet.module_path = '../..'
-    #puppet.options = '--verbose --debug'
   end
 end
